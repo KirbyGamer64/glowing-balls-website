@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .glowing-text {
+            font-size: 72px;
+            text-align: center;
+            color: white;
+            animation: glowing 2s linear infinite;
+        }
+
+        @keyframes glowing {
+            0% {
+                text-shadow: 0 0 10px rgb(255, 0, 0);
+            }
+            25% {
+                text-shadow: 0 0 20px rgb(0, 255, 0);
+            }
+            50% {
+                text-shadow: 0 0 30px rgb(0, 0, 255);
+            }
+            75% {
+                text-shadow: 0 0 40px rgb(255, 255, 0);
+            }
+            100% {
+                text-shadow: 0 0 50px rgb(255, 0, 255);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glowing-text">BALLS</div>
+</body>
+</html>
